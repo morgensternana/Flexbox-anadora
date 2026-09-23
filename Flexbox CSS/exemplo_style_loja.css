@@ -1,0 +1,322 @@
+/* ===================================
+   CONFIGURAÇÕES GERAIS
+=================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ===================================
+   HEADER
+=================================== */
+
+.cabecalho {
+    background-color: #172554;
+    color: white;
+    padding: 20px 8%;
+    /* FLEXBOX */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* LOGO */
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo p {
+    margin: 5px 0 0;
+}
+
+
+/* ===================================
+   MENU
+=================================== */
+
+.menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.menu a {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: #172554;
+    border-radius: 5px;
+}
+
+
+/* ===================================
+   MAIN
+=================================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+
+/* ===================================
+   BANNER
+=================================== */
+
+.banner {
+    min-height: 350px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 10px;
+    padding: 50px;
+    /* FLEXBOX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-texto {
+    max-width: 700px;
+}
+
+.banner h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* ===================================
+   BOTÃO
+=================================== */
+
+.botao {
+
+    display: inline-block;
+    background-color: #facc15;
+    color: #111827;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background-color: #eab308;
+}
+
+
+/* ===================================
+   PRODUTOS
+=================================== */
+
+.produtos {
+    margin-top: 40px;
+}
+
+.produtos>h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* LISTA DE PRODUTOS */
+
+.lista-produtos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ===================================
+   CARD DO PRODUTO
+=================================== */
+
+.produto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* FLEXBOX */
+    display: flex;
+    flex-direction: column;
+    /* 4 cards ocupando a linha */
+    flex: 1 1 220px;
+}
+
+
+.produto h3 {
+    margin-bottom: 5px;
+}
+
+.produto p {
+    color: #555;
+    flex-grow: 1;
+}
+
+
+/* IMAGEM DO PRODUTO */
+
+.produto-imagem {
+    height: 150px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    font-size: 70px;
+    /* FLEXBOX */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* PREÇO */
+
+.preco {
+    font-size: 22px;
+    color: #2563eb;
+    margin-top: 15px;
+}
+
+
+/* ===================================
+   SOBRE + OFERTA
+=================================== */
+
+.informacoes {
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    /* ocupa mais espaço */
+    flex: 2;
+}
+
+
+/* OFERTA */
+
+.oferta {
+    background-color: #172554;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    /* ocupa menos espaço */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.oferta strong {
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+.oferta span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #facc15;
+    margin-top: 5px;
+}
+
+
+/* ===================================
+   FOOTER
+=================================== */
+
+.rodape {
+    background-color: #111827;
+    color: white;
+    padding: 40px 8%;
+    /* FLEXBOX */
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+.rodape>div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rodape h3 {
+    margin-top: 0;
+}
+
+
+/* ===================================
+   RESPONSIVIDADE
+=================================== */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .banner {
+        padding: 30px 20px;
+    }
+
+
+    .banner h2 {
+        font-size: 30px;
+    }
+
+
+    .informacoes {
+        flex-direction: column;
+    }
+
+
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+}

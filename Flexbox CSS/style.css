@@ -1,0 +1,450 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+.cabecalho p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    background-color: white;
+    padding: 15px;
+
+    position: sticky;
+    top: 0;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    z-index: 10;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: bold;
+
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #e2e8f0;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.secao {
+    background-color: white;
+
+    margin-bottom: 30px;
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.secao h2 {
+    color: #1e293b;
+    border-bottom: 3px solid #38bdf8;
+    padding-bottom: 8px;
+}
+
+.secao h3 {
+    margin-top: 30px;
+    color: #334155;
+}
+
+
+/* =========================
+   CÓDIGO
+========================= */
+
+.codigo {
+    background-color: #0f172a;
+    color: #e2e8f0;
+
+    padding: 20px;
+    border-radius: 8px;
+
+    margin: 20px 0;
+
+    overflow-x: auto;
+}
+
+code {
+    background-color: #e2e8f0;
+    color: #0f172a;
+
+    padding: 5px 8px;
+
+    border-radius: 4px;
+
+    font-family: Consolas, monospace;
+}
+
+.codigo code {
+    background-color: transparent;
+    color: #e2e8f0;
+}
+
+
+/* =========================
+   ÁREA DOS EXEMPLOS
+========================= */
+
+.exemplo {
+    display: flex;
+
+    width: 100%;
+    min-height: 120px;
+
+    padding: 15px;
+
+    margin: 15px 0;
+
+    background-color: #e2e8f0;
+
+    border: 2px dashed #94a3b8;
+
+    overflow: hidden;
+}
+
+.exemplo > div {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0ea5e9;
+    color: white;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   DISPLAY
+========================= */
+
+.display-flex {
+    display: flex;
+}
+
+
+/* =========================
+   FLEX-DIRECTION
+========================= */
+
+.direction-row {
+    flex-direction: row;
+}
+
+.direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+
+/* =========================
+   JUSTIFY-CONTENT
+========================= */
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+
+/* =========================
+   ALIGN-ITEMS
+========================= */
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+
+/* =========================
+   FLEX-WRAP
+========================= */
+
+.wrap-nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+
+/* =========================
+   GAP
+========================= */
+
+.gap-example {
+    gap: 30px;
+}
+
+
+/* =========================
+   ALIGN-CONTENT
+========================= */
+
+.align-content-example {
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    height: 300px;
+}
+
+.align-content-example div {
+    width: 100px;
+}
+
+
+/* =========================
+   FLEX-GROW
+========================= */
+
+.grow-example .grow {
+    flex-grow: 1;
+}
+
+
+/* =========================
+   FLEX-SHRINK
+========================= */
+
+.shrink-example {
+    width: 300px;
+}
+
+.shrink-example div {
+    width: 150px;
+}
+
+.shrink-example .shrink {
+    flex-shrink: 1;
+}
+
+
+/* =========================
+   FLEX-BASIS
+========================= */
+
+.basis-example .basis {
+    flex-basis: 200px;
+}
+
+
+/* =========================
+   FLEX
+========================= */
+
+.flex-example .flex-item {
+    flex: 1 1 200px;
+}
+
+
+/* =========================
+   ALIGN-SELF
+========================= */
+
+.self-example {
+    align-items: center;
+}
+
+.self-example .self {
+    align-self: flex-end;
+}
+
+
+/* =========================
+   ORDER
+========================= */
+
+.order-example .order {
+    order: -1;
+}
+
+
+/* =========================
+   RESUMO
+========================= */
+
+.resumo {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+th {
+    background-color: #1e293b;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #1e293b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 700px) {
+
+    .cabecalho h1 {
+        font-size: 32px;
+    }
+
+    .secao {
+        padding: 20px;
+    }
+
+    .menu {
+        justify-content: flex-start;
+    }
+
+    .exemplo {
+        overflow-x: auto;
+    }
+
+}
